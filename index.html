@@ -2,111 +2,72 @@
 <html lang="vi">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hot news</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <div class="container">
+    <!-- THẺ NGỮ NGHĨA 1: <header> -->
+    <header class="container">
         <!-- Logo -->
         <h1 class="logo">Hot news</h1>
 
-        <!-- Menu -->
-        <div class="menu">
+        <!-- THẺ NGỮ NGHĨA 2: <nav> cho menu -->
+        <nav class="menu">
             <a href="#">Trang chủ</a> |
             <a href="#">Sao</a> |
             <a href="#">Phim</a> |
             <a href="#">Nhạc</a> |
             <a href="#">Video</a>
-        </div>
+        </nav>
+    </header>
 
+    <!-- THẺ NGỮ NGHĨA 3: <main> cho nội dung chính -->
+    <main class="container">
         <!-- PHẦN 1: HOT NEWS (3 CỘT) -->
-        <div class="section-1">
-            <!-- Cột 1 -->
+        <section class="section-1">
+            <!-- Tiêu đề cấp 2 đúng thứ tự -->
+            <h2>Tin tức nổi bật</h2>
+
             <div class="col">
-                <a href="#" class="card">
-                    <img src="https://via.placeholder.com/300x180" alt="img">
+                <a href="https://vtv.vn" target="_blank" class="card">
+                    <img src="https://picsum.photos/id/1018/300/180" alt="Nhóm nhạc BTS biểu diễn hăng hái cùng Coldplay trên sân khấu hoành tráng">
                     <h3>BTS biểu diễn 'My Universe' với Coldplay...</h3>
                 </a>
-                <a href="#" class="card">
-                    <img src="https://via.placeholder.com/300x180" alt="img">
+
+                <a href="https://vtv.vn" target="_blank" class="card">
+                    <img src="https://picsum.photos/id/1015/300/180" alt="Ca sĩ Britney Spears mỉm cười rạng rỡ trong sự kiện âm nhạc">
                     <h3>Britney Spears được tự do...</h3>
                 </a>
-            </div>
 
-            <!-- Cột 2 -->
-            <div class="col">
-                <a href="#" class="card">
-                    <img src="https://via.placeholder.com/300x180" alt="img">
-                    <h3>Tử vi hôm nay 18/11/2021 của 12 cung hoàng đạo...</h3>
-                </a>
-                <ul class="sub-list">
-                    <li><a href="#">Top các con giáp dễ bị xem thường...</a></li>
-                    <li><a href="#">Trắc nghiệm: Điều gì khiến bạn đánh mất...</a></li>
-                </ul>
-            </div>
-
-            <!-- Cột 3 -->
-            <div class="col">
-                <a href="#" class="card">
-                    <img src="https://via.placeholder.com/300x180" alt="img">
-                    <h3>Galaxy Z Flip3 được vinh danh smartphone...</h3>
-                </a>
-                <ul class="sub-list">
-                    <li><a href="#">Bí quyết săn khách sạn Ninh Bình giá rẻ...</a></li>
-                    <li><a href="#">Loạt deal xịn 'ăn thả ga' nhân ngày...</a></li>
-                </ul>
-            </div>
-        </div>
-
-        <!-- PHẦN 2: SAO (Nền hồng) -->
-        <div class="section-2">
-            <h2>Sao</h2>
-            <div class="row">
-                <a href="#" class="card-pink">
-                    <img src="https://via.placeholder.com/300x180" alt="img">
-                    <h3>Shawn Mendes và Camila Cabello bất ngờ thông báo chia tay</h3>
-                </a>
-                <a href="#" class="card-pink">
-                    <img src="https://via.placeholder.com/300x180" alt="img">
-                    <h3>Căng đét: Chu Nhất Long bị tố có thái độ ngôi sao...</h3>
-                </a>
-                <a href="#" class="card-pink">
-                    <img src="https://via.placeholder.com/300x180" alt="img">
-                    <h3>OMG: Haha và Kim Jong Kook đánh nhau trong lúc quay...</h3>
+                <a href="https://vtv.vn" target="_blank" class="card">
+                    <img src="https://picsum.photos/id/1019/300/180" alt="Hình ảnh một bộ phim điện ảnh đang chiếu trên màn ảnh rộng">
+                    <h3>Phim truyền hình hot nhất tuần qua...</h3>
                 </a>
             </div>
-        </div>
+        </section>
 
-        <!-- PHẦN 3: TIN BÊN LỀ (Nền vàng nhạt) -->
-        <div class="section-3">
-            <h2>Tin bên lề</h2>
-            <div class="row">
-                <!-- Tin lớn bên trái -->
-                <a href="#" class="card-side-left">
-                    <img src="https://via.placeholder.com/400x220" alt="img">
-                    <h3>Bị khách nữ 'boom hàng', shipper lên mạng nói cảm ơn...</h3>
-                </a>
+        <!-- BỔ SUNG DANH SÁCH (BẮT BUỘC THEO ĐỀ BÀI) -->
+        <section>
+            <h2>Danh mục tin tức chính</h2>
+            <ul>
+                <li>Tin tức Âm nhạc quốc tế</li>
+                <li>Phim điện ảnh chiếu rạp mới nhất</li>
+                <li>Đời sống và giải trí của các ngôi sao</li>
+            </ul>
+        </section>
 
-                <!-- Dãy tin nhỏ bên phải -->
-                <div class="card-side-right">
-                    <a href="#" class="item-small">
-                        <img src="https://via.placeholder.com/120x80" alt="img">
-                        <p>Clip: Cảm động tài xế xe tải chờ bé gái đạp xe...</p>
-                    </a>
-                    <a href="#" class="item-small">
-                        <img src="https://via.placeholder.com/120x80" alt="img">
-                        <p>Clip: Ấm lòng hành động tài xế soi đèn cho cậu bé...</p>
-                    </a>
-                </div>
-            </div>
-        </div>
+        <!-- BỔ SUNG LIÊN KẾT NGOÀI (BẮT BUỘC THEO ĐỀ BÀI) -->
+        <section>
+            <p>Xem thêm nhiều tin tức khác tại <a href="https://vtv.vn" target="_blank" rel="noopener noreferrer">Trang tin tức tổng hợp VTV</a>.</p>
+        </section>
+    </main>
 
-        <!-- Footer -->
-        <div class="footer">
-            Bản quyền thuộc HotNews
-        </div>
-    </div>
+    <!-- THẺ NGỮ NGHĨA 4: <footer> -->
+    <footer>
+        <p>&copy; 2026 Trang tin tức Hot News</p>
+    </footer>
 
 </body>
 </html>
