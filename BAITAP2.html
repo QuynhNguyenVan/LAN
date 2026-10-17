@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang chủ - Tin tức & Đời sống</title>
+    <!-- Yêu cầu: Liên kết tệp CSS chính xác -->
+    <link rel="stylesheet" href="baitap2.css">
+</head>
+<body>
+
+    <!-- Yêu cầu 4: Skip to Main Content Link -->
+    <a href="#main-content" class="skip-link">Chuyển đến Nội dung chính</a>
+
+    <header>
+        <h1>Hot News - Trang Tin Tức</h1>
+        <!-- Yêu cầu 5 & 8: Điều hướng đẹp mắt sử dụng Flexbox -->
+        <nav class="navbar">
+            <a href="index.html" class="nav-link active">Trang chủ</a>
+            <a href="gallery.html" class="nav-link">Thư viện ảnh</a>
+            <a href="contact.html" class="nav-link">Liên hệ</a>
+        </nav>
+    </header>
+
+    <!-- Thẻ main với id để nhận Skip Link -->
+    <main id="main-content">
+        <section class="hero">
+            <h2>Tin nổi bật trong ngày</h2>
+            <p>Cập nhật những thông tin mới nhất về công nghệ, âm nhạc và nghệ thuật.</p>
+            <!-- Thẻ img dùng Box Model -->
+            <img src="https://picsum.photos/id/1018/600/350" alt="Cảnh thiên nhiên tươi đẹp với dòng sông và ngọn núi trùng điệp" class="styled-img">
+        </section>
+
+        <!-- Yêu cầu 7: Sử dụng CSS Grid cho bố cục 2 cột -->
+        <section class="grid-container">
+            <article class="grid-card">
+                <h3>Công nghệ mới 2026</h3>
+                <p>Khám phá các bước tiến vượt bậc của trí tuệ nhân tạo và thiết bị thông minh.</p>
+            </article>
+            <article class="grid-card">
+                <h3>Âm nhạc & Giải trí</h3>
+                <p>Những sự kiện âm nhạc bùng nổ và các album đáng chú ý nhất tuần qua.</p>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Trang tin tức cá nhân. Bảo lưu mọi quyền.</p>
+    </footer>
+
+</body>
+</html>
